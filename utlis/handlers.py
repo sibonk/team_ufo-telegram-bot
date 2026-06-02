@@ -16,7 +16,7 @@ class Ticket(StatesGroup):
 @router.message(CommandStart())
 async def start(message: Message):
     await message.answer_photo(photo="AgACAgIAAxkBAANfah5_Nkam0AwQBrR9rWYsWuyT8eIAAnEhaxtZ5flIEFi8aktJ_1YBAAMCAAN5AAM7BA", 
-                               caption="Система заявок IT-отдела\n\nЧерез этого бота Вы можете: сообщить о проблеме и отследить статус обращения.")
+                               caption="Система заявок IT-отдела\n\nЧерез этого бота Вы можете: сообщить о проблеме и отследить статус обращения.", reply_markup=kb.main)
 
 @router.message(F.text == "Создать заявку")
 async def create_tick(message: Message):
