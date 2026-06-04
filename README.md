@@ -32,11 +32,11 @@
    ```
 2. **Создайте и активируйте виртуальное окружение:**
    ```bash
-   python -m venv venv
+   python -m venv .venv
    # Для Windows:
-   venv\Scripts\activate
+   .venv\Scripts\activate
    # Для Linux/macOS:
-   source venv/bin/activate
+   source .venv/bin/activate
    ```
 3. **Установите зависимости:**
    ```bash
